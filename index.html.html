@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+      <link href="https://fonts.googleapis.com/css2?family=Siemreap&display=swap" rel="stylesheet">
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Battambang:wght@100;300;400;700;900&family=Bayon&family=Dangrek&family=Koulen&family=Moul&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Siemreap&display=swap');
+   *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Battambang", system-ui;
+}
+header{
+    width: 100%;
+    background-color: white;
+    box-shadow: 1px 1px 10px rgba(191, 191, 191, 0.25);
+    padding: 10px 0;
+    z-index: 1;
+}
+nav{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+nav .logo{
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav .logo img{
+    width: 80px;
+}
+nav .logo h3{
+    font-family: "Moul", serif;
+    font-size: 15px;
+    font-weight: normal;
+}
+nav ul{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+nav ul li a{
+    display: block;
+    padding: 10px;
+    color: black;
+    font-size: 25px;
+      font-family: "Dangrek", serif;
+}
+nav ul li a:hover{
+    text-decoration: underline;
+}
+
+/* Main Section */
+main{
+    width: 90%;
+    margin: auto;
+}
+main .bgsection{
+    width: 100%;
+}
+main .bgsection .imgbox{
+    width: 100%;
+    height: 575px;
+    background-image: url(img/ngsbg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+main .bgsection .imgbox .cover{
+    background-color: rgba(0, 0, 0, 0.276);
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+main .bgsection .imgbox .cover .title{
+    position: absolute;
+    top: 50%;
+    left: 50px;
+    transform: translate(0,-50%);
+    color: white;
+    width: 70%;
+}
+main .bgsection .imgbox .cover .title h3{
+    font-size: 40px;
+    margin-bottom: 10px;
+    height: 25px;
+}
+main .bgsection .imgbox .cover .title p{
+    font-size: 20px;
+}
+main .bgsection .imgbox .cover .title button{
+    border: none;
+    padding: 10px 20px;
+    background-color: #144a93;
+    color: white;
+    font-size: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* Announcement Section */
+main .announcement{
+    width: 100%;
+    margin-top: 5px;
+}
+main .announcement h3{
+    text-align: center;
+    font-size: 40px;
+    text-decoration: underline;
+}
+main .announcement .ann-card{
+    display: flex;
+    gap: 5px;
+}
+main .announcement .ann-card .annbox1{
+    width: 30%;
+    height: 500px;
+    background-color: #144a93;
+    border-radius: 10px;
+
+}
+main .announcement .ann-card .annbox2{
+
+    border-radius: 10px;
+    display: flex;
+    flex-grow: 1;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+main .announcement .ann-card .annbox2 .ann-items{
+    background-color: beige;
+    width: calc((100% - (5px * 2))/3);
+    border-radius: 5px;
+
+}
+
+
+main .announcement .news-container .news-items{
+    background-color: rgb(207, 207, 207);
+    width: calc((100% - (5px * 3))/4); 
+    height: 300px; 
+    border-radius: 10px;
+}
+
+/* App Section */
+main .announcement .app-container{
+    width: 100%;
+    display: flex;
+    gap: 5px;
+}
+main .announcement .app-container .app-items{
+    width: 50%;
+}
+main .announcement .app-container .app-items{
+    margin: auto 30px;
+}
+main .announcement .app-container .app-items p{
+    font-size: 30px;
+}
+main .announcement .app-container .app-items button{
+    display: block;
+    padding: 10px;
+    margin: 10px auto;
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    background-color: #144a93;
+    color: white;
+    width: 100%;
+    cursor: pointer;
+}
+
+main .announcement .app-container .app-items button .fa-brands{
+    font-size: 50px;
+    margin-right: 20px;
+}
+main .announcement .app-container .app-items img{
+    height: 400px;
+    margin: 0 200px;
+}
+
+/* Footer */
+footer{
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.175);
+    margin-top: 50px;
+}
+footer .footer-container{
+    width: 90%;
+    display: flex;
+    gap: 5px;
+    margin: auto;
+}
+footer .footer-container .footer-items{
+    width: calc((100% - (5px * 2))/3); 
+    padding: 30px 0;
+}
+footer .footer-container .footer-items img{
+    width: 200px;
+}
+footer .footer-container .footer-items h3{
+    font-family: "Koulen", sans-serif;
+    font-weight: normal;
+}
+footer .footer-container .footer-items a{
+    color: black;
+}
+footer .p-footer{
+    background-color: #144a93;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    font-family: "Koulen", sans-serif;
+}
+     .item-box img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+</style>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href=""><img src="img/NGS PL Logo.png" alt="Logo NGS PL"></a>
+                <h3>វិទ្យាល័យព្រែកលៀប <br> សាលារៀនជំនាន់ថ្មី</h3>
+            </div>
+            <ul>
+              <li><a href="index.html">ទំព័រដើម</a></li>
+               <li><a href="schoo_leader.html">គ្រូបន្ទុក</a></li>
+                <li><a href="about.html">ព័ត៌មានលម្អិត​និងកម្មវិធីសិក្សា</a></li>
+                <li><a href="school.html">សកម្មភាព</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="bgsection">
+            <div class="imgbox">
+                <div class="cover">
+                    <div class="title">
+                        <!-- Element to contain animated typing -->
+                        <h3 id="title"></h3>
+                        <p>​ស្វាគមន៍មកកាន់ថ្នាក់បច្ចេកវិទ្យានៃវិទ្យាល័យព្រែកលៀប</p>
+                        <button>ព័ត៌មាន​ លម្អិត <a href="about.html" class="fa-solid fa-chevron-right"></a></button>
+    
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Announcement -->
+        
+        <section class="announcement">
+            <h3>ទាញយកកម្មវិធីសាលា</h3>
+            <div class="app-container">
+                <div class="app-items">
+                    <p>អាណាព្យាបាលអាចទាញយកកម្មវិធីទូរស័ព្ទដៃដើម្បីតាមដាន និងសុំច្បាប់សម្រាប់ការសិក្សារបស់កូនៗ។</p>
+                    <button><i class="fa-brands fa-google-play"></i> ទាញយកតាមរយៈ <br> Google Play</button>
+                    <button><i class="fa-brands fa-app-store"></i> ទាញយកតាមរយៈ <br> Google Play</button>
+                </div>
+                <div class="app-items">
+                    <img src="img/salaApp.png" alt="Sala App">
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-items">
+                <img src="img/NGS PL Logo.png" alt="">
+            </div>
+            <div class="footer-items">
+                <h3>អាសយដ្ឋាន</h3>
+                <p>National Road 6A, Sangat Prek Leap, Khan Chroy Chongva, Phnom Penh, Cambodia</p>
+            </div>
+            <div class="footer-items">
+                <h3>ជួបគ្នានៅបណ្តាញសង្គម</h3>
+                <span style="font-size: 25px;">
+                    <a href="https://web.facebook.com/ngsprekleap"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.youtube.com/@ngsprekleap"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://t.me/ngsprekleap"><i class="fa-brands fa-telegram"></i></a>
+                </span>
+                <div class="contact">
+                    <p>ទំនាក់ទំនង</p> 
+                    <a href="mailto:prekleaphighschool@gmail.com">prekleaphighschool@gmail.com</a> <br> 
+                    <a href="tel:089 322 400">089 322 400</a>
+                </div>
+            </div>
+        </div>
+        <p class="p-footer">&copy; រក្សាសិទ្ធគ្របយ៉ាងដោយ វិទ្យាល័យព្រែកលៀប</p​>
+    </footer>
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#title', {
+        strings: ['វិទ្យាល័យព្រែកលៀប (សាលារៀនជំនាន់ថ្មី)'],
+        typeSpeed: 50,
+        loop: true
+        });
+    </script>
+</body>
+</body>
+</html>
